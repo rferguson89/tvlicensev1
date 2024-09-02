@@ -14,10 +14,10 @@ public class DemoController {
 
 		//link to next page
 
-		theModel.addAttribute("theDate", new java.util.Date());
-		theModel.addAttribute("banana", "I'm big and yellow");
+		//theModel.addAttribute("theDate", new java.util.Date());
+		//theModel.addAttribute("banana", "I'm big and yellow");
 
-		return "start";
+		return "fine-start-page";
 	}
 }
 
