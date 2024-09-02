@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0040)https://www.gov.uk/pay-court-fine-online -->
 <html class="govuk-template show-global-bar" xmlns:th="http://www.thymeleaf.org" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
@@ -7,8 +6,10 @@
         Pay a TV License fine - GOV.UK
     </title>
 
+
     <link rel="stylesheet" th:href="@{/css/govuk-frontend-5.6.0.min.css}">
     <link rel="stylesheet" th:href="@{/css/fines-custom-style.css}">
+
 </head>
 
 <body class="gem-c-layout-for-public govuk-template__body js-enabled govuk-frontend-supported">
@@ -19,7 +20,7 @@
         <div class="govuk-header__logo">
             <a href="#" class="govuk-header__link govuk-header__link--homepage">
                 <svg
-                        focusable="false"a
+                        focusable="false"
                         role="img"
                         class="govuk-header__logotype"
                         xmlns="http://www.w3.org/2000/svg"
@@ -47,6 +48,16 @@
 
 <div id="wrapper" class="direction-ltr govuk-width-container">
 
+    <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+            <strong class="govuk-tag govuk-phase-banner__content__tag">
+                Alpha
+            </strong>
+            <span class="govuk-phase-banner__text">
+      This is a new service. Help us improve it and <a class="govuk-link" href=mailto:50098070@belfastmet.ac.uk>give your feedback by email</a>.
+    </span>
+        </p>
+    </div>
 
 
     <!-- This is the start of the main content to be edited
@@ -97,21 +108,21 @@
                         </div>
                         <br>
                         <br>
-                        <form action="finePay" method="post" novalidate>
+                        <form action="/form-handler" method="post" novalidate>
                             <input type="hidden" name="answers-checked" value="true">
                             <button type="submit" class="govuk-button" data-module="govuk-button">
                                 Pay Now
                             </button>
                         </form>
 
+                        </div>
+                    </dl>
+
+
                 </div>
-                </dl>
-
-
             </div>
+        </main>
     </div>
-    </main>
-</div>
 
 <!--
 *
