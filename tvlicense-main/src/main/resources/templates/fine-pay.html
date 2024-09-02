@@ -104,21 +104,21 @@
             <div id="roll-number-hint" class="govuk-hint">
                 You can find it on your card, statement or passbook
             </div>
-            <input class="govuk-input govuk-input--width-10 govuk-input--extra-letter-spacing" id="roll-number" name="rollNumber" type="text" spellcheck="false" aria-describedby="roll-number-hint">
+            <form action="confirmation" method="Post">
+                <input class="govuk-input govuk-input--width-10 govuk-input--extra-letter-spacing"
+                       id="roll-number"
+                       name="rollNumber"
+                       type="text"
+                       spellcheck="false"
+                       aria-describedby="roll-number-hint">
+
+                <button type="submit" class="govuk-button" data-module="govuk-button">
+                    Pay
+                </button>
+
+            </form>
         </div>
-        <button type="submit" class="govuk-button" data-module="govuk-button">
-            Pay
-        </button>
-
     </main>
-
-    <!--
-    *
-    *
-    *
-    *
-    *
-    This is the end of the main content that can be edited -->
 </div>
 
 <footer class="govuk-footer">
