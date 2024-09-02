@@ -25,23 +25,31 @@ public class FineWebController {
             populatedDTO.setAmount(theFine.getAmount());
             model.addAttribute("fineAmountDTO", populatedDTO);
 
-            return "fine-form";
+            return "fine-details";
         } else {
             // Handle case where fine is not found
-            return "search";
+            return "fine-start-page";
         }
     }
 
     @GetMapping("/confirmation")
     public String displaySuccessPage(Model theModel) {
         theModel.addAttribute("theDate", new java.util.Date());
-        return "success";
+        return "fine-receipt";
+
     }
+
 
     @GetMapping("/search")
     public String searchByReference(Model model) {
         model.addAttribute("fine", new FineAmountDTO());
-        return "search";
+        return "fine-search";
+    }
+
+    @GetMapping("/finePay")
+    public String displaypayPage(Model theModel) {
+        Model fine = theModel.addAttribute("fine", new FineAmountDTO());
+        return "fine-pay";
     }
 
     @PostMapping("/updateAmount")
@@ -68,8 +76,21 @@ public class FineWebController {
             fineService.save(theFine);
 
             // Redirect to a success page or handle accordingly
-            return "redirect:/confirmation";
+            return "redirect:/Confirmation";
 
+        }
+    }
+
+    @PostMapping("/fineDetails")
+    public String displayFineDetails(@ModelAttribute FineAmountDTO fineAmountDTO, Model model) {
+        Fine theFine = fineService.findByReference(fineAmountDTO.getReference());
+
+        if (theFine != null) {
+            model.addAttribute("fine", theFine);
+            return "fine-details";
+        } else {
+            // Handle case where fine is not found
+            return "search";
         }
     }
 }

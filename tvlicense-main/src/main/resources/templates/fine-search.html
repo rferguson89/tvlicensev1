@@ -8,8 +8,8 @@
     </title>
 
 
-    <link rel="stylesheet" href="/static/css/govuk-frontend-5.6.0.min.css">
-    <link rel="stylesheet" href="/static/css/fines-custom-style.css">
+    <link rel="stylesheet" th:href="@{/css/govuk-frontend-5.6.0.min.css}">
+    <link rel="stylesheet" th:href="@{/css/fines-custom-style.css}">
 
 </head>
 
@@ -81,7 +81,7 @@
             <div class="govuk-grid-column-two-thirds">
 
 
-                <form th:object="${fine}" th:action="@{/search}" method="POST">
+                <form th:object="${fine}" th:action="@{/amendAmount}" method="POST">
 
                     <div class="govuk-form-group">
                         <label class="govuk-label" for="width-10">
@@ -90,13 +90,13 @@
                         <input th:field="*{reference}" class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
                     </div>
 
-                    <div class="govuk-form-group">
-                        <label class="govuk-label" for="width-10">
-                            House Number
-                        </label>
-                        <input th:field="*{house-number}" class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
-                    </div>
-
+                    <!--  <div class="govuk-form-group">
+                          <label class="govuk-label" for="width-10">
+                              House Number
+                          </label>
+                          <input th:field="*{house-number}" class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
+                      </div>
+  -->
                     <div class="govuk-form-group">
                         <label class="govuk-label" for="width-10">
                             Postcode
