@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://www.gov.uk/pay-court-fine-online -->
+<html class="govuk-template show-global-bar" xmlns:th="http://www.thymeleaf.org" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <title lang="en">
+        Pay a TV License fine - GOV.UK
+    </title>
+
+
+    <link rel="stylesheet" href="/static/css/govuk-frontend-5.6.0.min.css">
+    <link rel="stylesheet" href="/static/css/fines-custom-style.css">
+
+</head>
+
+<body class="gem-c-layout-for-public govuk-template__body js-enabled govuk-frontend-supported">
+
+
+<header class="govuk-header" data-module="govuk-header">
+    <div class="govuk-header__container govuk-width-container">
+        <div class="govuk-header__logo">
+            <a href="#" class="govuk-header__link govuk-header__link--homepage">
+                <svg
+                        focusable="false"
+                        role="img"
+                        class="govuk-header__logotype"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 148 30"
+                        height="30"
+                        width="148"
+                        aria-label="GOV.UK">
+                    <title>GOV.UK</title>
+                    <path d="M22.6 10.4c-1 .4-2-.1-2.4-1-.4-.9.1-2 1-2.4.9-.4 2 .1 2.4 1s-.1 2-1 2.4m-5.9 6.7c-.9.4-2-.1-2.4-1-.4-.9.1-2 1-2.4.9-.4 2 .1 2.4 1s-.1 2-1 2.4m10.8-3.7c-1 .4-2-.1-2.4-1-.4-.9.1-2 1-2.4.9-.4 2 .1 2.4 1s0 2-1 2.4m3.3 4.8c-1 .4-2-.1-2.4-1-.4-.9.1-2 1-2.4.9-.4 2 .1 2.4 1s-.1 2-1 2.4M17 4.7l2.3 1.2V2.5l-2.3.7-.2-.2.9-3h-3.4l.9 3-.2.2c-.1.1-2.3-.7-2.3-.7v3.4L15 4.7c.1.1.1.2.2.2l-1.3 4c-.1.2-.1.4-.1.6 0 1.1.8 2 1.9 2.2h.7c1-.2 1.9-1.1 1.9-2.1 0-.2 0-.4-.1-.6l-1.3-4c-.1-.2 0-.2.1-.3m-7.6 5.7c.9.4 2-.1 2.4-1 .4-.9-.1-2-1-2.4-.9-.4-2 .1-2.4 1s0 2 1 2.4m-5 3c.9.4 2-.1 2.4-1 .4-.9-.1-2-1-2.4-.9-.4-2 .1-2.4 1s.1 2 1 2.4m-3.2 4.8c.9.4 2-.1 2.4-1 .4-.9-.1-2-1-2.4-.9-.4-2 .1-2.4 1s0 2 1 2.4m14.8 11c4.4 0 8.6.3 12.3.8 1.1-4.5 2.4-7 3.7-8.8l-2.5-.9c.2 1.3.3 1.9 0 2.7-.4-.4-.8-1.1-1.1-2.3l-1.2 4c.7-.5 1.3-.8 2-.9-1.1 2.5-2.6 3.1-3.5 3-1.1-.2-1.7-1.2-1.5-2.1.3-1.2 1.5-1.5 2.1-.1 1.1-2.3-.8-3-2-2.3 1.9-1.9 2.1-3.5.6-5.6-2.1 1.6-2.1 3.2-1.2 5.5-1.2-1.4-3.2-.6-2.5 1.6.9-1.4 2.1-.5 1.9.8-.2 1.1-1.7 2.1-3.5 1.9-2.7-.2-2.9-2.1-2.9-3.6.7-.1 1.9.5 2.9 1.9l.4-4.3c-1.1 1.1-2.1 1.4-3.2 1.4.4-1.2 2.1-3 2.1-3h-5.4s1.7 1.9 2.1 3c-1.1 0-2.1-.2-3.2-1.4l.4 4.3c1-1.4 2.2-2 2.9-1.9-.1 1.5-.2 3.4-2.9 3.6-1.9.2-3.4-.8-3.5-1.9-.2-1.3 1-2.2 1.9-.8.7-2.3-1.2-3-2.5-1.6.9-2.2.9-3.9-1.2-5.5-1.5 2-1.3 3.7.6 5.6-1.2-.7-3.1 0-2 2.3.6-1.4 1.8-1.1 2.1.1.2.9-.3 1.9-1.5 2.1-.9.2-2.4-.5-3.5-3 .6 0 1.2.3 2 .9l-1.2-4c-.3 1.1-.7 1.9-1.1 2.3-.3-.8-.2-1.4 0-2.7l-2.9.9C1.3 23 2.6 25.5 3.7 30c3.7-.5 7.9-.8 12.3-.8m28.3-11.6c0 .9.1 1.7.3 2.5.2.8.6 1.5 1 2.2.5.6 1 1.1 1.7 1.5.7.4 1.5.6 2.5.6.9 0 1.7-.1 2.3-.4s1.1-.7 1.5-1.1c.4-.4.6-.9.8-1.5.1-.5.2-1 .2-1.5v-.2h-5.3v-3.2h9.4V28H55v-2.5c-.3.4-.6.8-1 1.1-.4.3-.8.6-1.3.9-.5.2-1 .4-1.6.6s-1.2.2-1.8.2c-1.5 0-2.9-.3-4-.8-1.2-.6-2.2-1.3-3-2.3-.8-1-1.4-2.1-1.8-3.4-.3-1.4-.5-2.8-.5-4.3s.2-2.9.7-4.2c.5-1.3 1.1-2.4 2-3.4.9-1 1.9-1.7 3.1-2.3 1.2-.6 2.6-.8 4.1-.8 1 0 1.9.1 2.8.3.9.2 1.7.6 2.4 1s1.4.9 1.9 1.5c.6.6 1 1.3 1.4 2l-3.7 2.1c-.2-.4-.5-.9-.8-1.2-.3-.4-.6-.7-1-1-.4-.3-.8-.5-1.3-.7-.5-.2-1.1-.2-1.7-.2-1 0-1.8.2-2.5.6-.7.4-1.3.9-1.7 1.5-.5.6-.8 1.4-1 2.2-.3.8-.4 1.9-.4 2.7zM71.5 6.8c1.5 0 2.9.3 4.2.8 1.2.6 2.3 1.3 3.1 2.3.9 1 1.5 2.1 2 3.4s.7 2.7.7 4.2-.2 2.9-.7 4.2c-.4 1.3-1.1 2.4-2 3.4-.9 1-1.9 1.7-3.1 2.3-1.2.6-2.6.8-4.2.8s-2.9-.3-4.2-.8c-1.2-.6-2.3-1.3-3.1-2.3-.9-1-1.5-2.1-2-3.4-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2c.4-1.3 1.1-2.4 2-3.4.9-1 1.9-1.7 3.1-2.3 1.2-.5 2.6-.8 4.2-.8zm0 17.6c.9 0 1.7-.2 2.4-.5s1.3-.8 1.7-1.4c.5-.6.8-1.3 1.1-2.2.2-.8.4-1.7.4-2.7v-.1c0-1-.1-1.9-.4-2.7-.2-.8-.6-1.6-1.1-2.2-.5-.6-1.1-1.1-1.7-1.4-.7-.3-1.5-.5-2.4-.5s-1.7.2-2.4.5-1.3.8-1.7 1.4c-.5.6-.8 1.3-1.1 2.2-.2.8-.4 1.7-.4 2.7v.1c0 1 .1 1.9.4 2.7.2.8.6 1.6 1.1 2.2.5.6 1.1 1.1 1.7 1.4.6.3 1.4.5 2.4.5zM88.9 28 83 7h4.7l4 15.7h.1l4-15.7h4.7l-5.9 21h-5.7zm28.8-3.6c.6 0 1.2-.1 1.7-.3.5-.2 1-.4 1.4-.8.4-.4.7-.8.9-1.4.2-.6.3-1.2.3-2v-13h4.1v13.6c0 1.2-.2 2.2-.6 3.1s-1 1.7-1.8 2.4c-.7.7-1.6 1.2-2.7 1.5-1 .4-2.2.5-3.4.5-1.2 0-2.4-.2-3.4-.5-1-.4-1.9-.9-2.7-1.5-.8-.7-1.3-1.5-1.8-2.4-.4-.9-.6-2-.6-3.1V6.9h4.2v13c0 .8.1 1.4.3 2 .2.6.5 1 .9 1.4.4.4.8.6 1.4.8.6.2 1.1.3 1.8.3zm13-17.4h4.2v9.1l7.4-9.1h5.2l-7.2 8.4L148 28h-4.9l-5.5-9.4-2.7 3V28h-4.2V7zm-27.6 16.1c-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7 2.7-1.2 2.7-2.7-1.2-2.7-2.7-2.7z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="govuk-header__content">
+            <a href="#" class="govuk-header__link govuk-header__service-name">
+                Pay a TV License Fine
+            </a>
+        </div>
+    </div>
+</header>
+    
+
+      <div class="">
+        <div class="gem-c-layout-for-public__blue-bar govuk-width-container"></div>
+</div>
+
+      <div id="wrapper" class="direction-ltr govuk-width-container">
+
+          <div class="govuk-phase-banner">
+              <p class="govuk-phase-banner__content">
+                  <strong class="govuk-tag govuk-phase-banner__content__tag">
+                      Alpha
+                  </strong>
+                  <span class="govuk-phase-banner__text">
+      This is a new service. Help us improve it and <a class="govuk-link" href=mailto:50098070@belfastmet.ac.uk>give your feedback by email</a>.
+    </span>
+              </p>
+          </div>
+
+   <!-- This is the start of the main content to be edited
+   *
+   *
+   *
+   *
+   *
+   *-->
+
+    <main role="main" id="content" class="answer" lang="en">
+      <span id="Top"></span>
+          
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+
+<div class="gem-c-title govuk-!-margin-top-8 govuk-!-margin-bottom-8">
+
+  <h1 class="gem-c-title__text govuk-heading-xl">
+    Pay a TV license fine
+  </h1>
+</div>
+  </div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="responsive-bottom-margin">
+      
+<div class="gem-c-govspeak govuk-govspeak direction-ltr disable-youtube" data-module="govspeak" data-govspeak-module-started="true">
+    <div class="gem-c-govspeak govuk-govspeak " data-module="govspeak" data-govspeak-module-started="true">
+
+        <p>Use this service to pay a fine for not having a TV Licence when one was required.</p>
+
+
+        <p>Your notice of fine letter will tell you how much you have to pay and when you must pay it by.</p>
+
+
+
+
+    </div>
+
+
+<div role="note" aria-label="Information" class="application-notice info-notice">
+<p>This page is also available <a href="https://www.gov.uk/talu-dirwy-llys-ar-lein">in Welsh (Cymraeg)</a>.</p>
+</div>
+
+
+<h2 id="how-to-pay">How to pay</h2>
+
+<p>You need your fine reference number and a debit or credit card. If you’ve lost your notice of fine, <a rel="external" href="https://www.find-court-tribunal.service.gov.uk/">contact the court</a> where you received the fine.</p>
+
+<p>You must pay by the date given in your notice of fine. The court might reject your payment if enforcement action has already started.</p>
+
+<h3 id="pay-online">Pay online</h3>
+
+<p>You can pay online by clicking the button below.</p>
+
+<p><a class="gem-c-button govuk-button govuk-button--start" role="button" data-module="govuk-button" data-ga4-attributes="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;start button&quot;}" draggable="false" href="fine-search.html" data-govuk-button-module-started="true"><span> Start now </span><svg class="govuk-button__start-icon govuk-!-display-none-print" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" focusable="false" aria-hidden="true"><path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path></svg></a></p>
+
+<h3 id="pay-by-phone">Pay by phone</h3>
+
+<div class="contact">
+<p>Telephone: 0300 790 9901 (in England)<br>
+Telephone: 0300 790 9980 (in Wales)<br>
+    Telephone: 0300 790 9972 (in Scotland)<br>
+    Telephone: 0300 790 9964 (in N. Ireland)<br>
+<a href="https://www.gov.uk/call-charges">Find out about call charges</a></p>
+</div>
+
+<h3 id="other-ways-to-pay">Other ways to pay</h3>
+
+<p>Contact the Enforcement Office listed on the notice of fine to pay by direct debit, payment card or bank transfer.</p>
+
+
+</div>
+    </div>
+  </div>
+  
+<div class="govuk-grid-column-one-third">
+
+
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+    </main>
+
+    <!--
+    *
+    *
+    *
+    *
+    *
+    This is the end of the main content that can be edited -->
+  </div>
+
+<footer class="govuk-footer">
+    <div class="govuk-width-container">
+        <div class="govuk-footer__navigation">
+            <div class="govuk-footer__section govuk-grid-column-two-thirds">
+                <h2 class="govuk-footer__heading govuk-heading-m">Services and information</h2>
+                <ul class="govuk-footer__list govuk-footer__list--columns-2">
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Benefits
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Births, deaths, marriages and care
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Business and self-employed
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Childcare and parenting
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Citizenship and living in the UK
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Crime, justice and the law
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Disabled people
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Driving and transport
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Education and learning
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Employing people
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Environment and countryside
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Housing and local services
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Money and tax
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Passports, travel and living abroad
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Visas and immigration
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Working, jobs and pensions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="govuk-footer__section govuk-grid-column-one-third">
+                <h2 class="govuk-footer__heading govuk-heading-m">Departments and policy</h2>
+                <ul class="govuk-footer__list">
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            How government works
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Departments
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Worldwide
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Policies
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Publications
+                        </a>
+                    </li>
+                    <li class="govuk-footer__list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Announcements
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="govuk-footer__section-break">
+        <div class="govuk-footer__meta">
+            <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+                <h2 class="govuk-visually-hidden">Support links</h2>
+                <ul class="govuk-footer__inline-list">
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Help
+                        </a>
+                    </li>
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Cookies
+                        </a>
+                    </li>
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="#">
+                            Terms and conditions
+                        </a>
+                    </li>
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="#" lang="cy" hreflang="cy">
+                            Rhestr o Wasanaethau Cymraeg
+                        </a>
+                    </li>
+                </ul>
+                <div class="govuk-footer__meta-custom">
+                    Built by the <a href="#" class="govuk-footer__link">Government Digital Service</a>
+                </div>
+                <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        class="govuk-footer__licence-logo"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 483.2 195.7"
+                        height="17"
+                        width="41">
+                    <path
+                            fill="currentColor"
+                            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+                </svg>
+                <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+                  class="govuk-footer__link"
+                  href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                  rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+            </div>
+            <div class="govuk-footer__meta-item">
+                <a
+                        class="govuk-footer__link govuk-footer__copyright-logo"
+                        href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">
+                    © Crown copyright
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
