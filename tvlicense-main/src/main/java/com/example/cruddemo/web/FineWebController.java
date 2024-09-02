@@ -46,8 +46,8 @@ public class FineWebController {
         return "fine-search";
     }
 
-    @GetMapping("/finePay")
-    public String displaypayPage(Model theModel) {
+    @PostMapping("/finePay")
+    public String displayPayPage(Model theModel) {
         Model fine = theModel.addAttribute("fine", new FineAmountDTO());
         return "fine-pay";
     }
