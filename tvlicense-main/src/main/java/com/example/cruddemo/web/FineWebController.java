@@ -48,9 +48,12 @@ public class FineWebController {
 
     @PostMapping("/finePay")
     public String displayPayPage(Model theModel) {
-        Model fine = theModel.addAttribute("fine", new FineAmountDTO());
+        theModel.addAttribute("fineAmountDTO", new FineAmountDTO());
+
         return "fine-pay";
     }
+
+    //Model fine = theModel.addAttribute("fine", new FineAmountDTO());-->
 
     @PostMapping("/updateAmount")
     public String updateAmount(@ModelAttribute FineAmountDTO fineAmountDTO) {
@@ -76,7 +79,7 @@ public class FineWebController {
             fineService.save(theFine);
 
             // Redirect to a success page or handle accordingly
-            return "redirect:/Confirmation";
+            return "redirect:/confirmation";
 
         }
     }

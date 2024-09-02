@@ -16,7 +16,7 @@
 </head>
 <body>
   <h1>Search</h1>
-  <form th:object="${fine}" th:action="@{/amendAmount}" method="post">
+  <form th:object="${fine}" th:action="@{/fineDetails}" method="post">
       <div>
           <label for="reference">Reference:</label>
           <input id="reference" th:field="*{reference}" placeholder="reference"/>

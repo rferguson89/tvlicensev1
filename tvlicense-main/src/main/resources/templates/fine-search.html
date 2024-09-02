@@ -81,13 +81,16 @@
             <div class="govuk-grid-column-two-thirds">
 
 
-                <form th:object="${fine}" th:action="@{/amendAmount}" method="POST">
+                <form th:object="${fine}" th:action="@{/fineDetails}" method="POST">
 
                     <div class="govuk-form-group">
                         <label class="govuk-label" for="width-10">
                             Fine Reference Number
                         </label>
+                     <!--<div class="govuk-form-group" th:classappend="${#fields.hasErrors('reference')} ? 'govuk-form-group--error'">-->
                         <input th:field="*{reference}" class="govuk-input govuk-input--width-10" id="width-10" name="width10" type="text">
+                     <!--   <span class="govuk-error-message" th:if="${#fields.hasErrors('reference')}" th:errors="*{reference}"></span>-->
+
                     </div>
 
                     <!--  <div class="govuk-form-group">

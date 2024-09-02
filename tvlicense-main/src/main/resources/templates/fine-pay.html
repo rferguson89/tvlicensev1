@@ -73,12 +73,35 @@
         <br>
         <br>
         <h1 class="govuk-heading-l">Bank or building society account details</h1>
+
+
+        <form th:object="${fineAmountDTO}" th:action="@{/updateAmount}" method="post" class="uk-form-stacked">
+
+            <!-- Reference Field from Old Form -->
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="reference">Reference:</label>
+                <div class="govuk-form-controls">
+                    <input class="govuk-input" id="reference" th:field="*{reference}" placeholder="Reference" type="text">
+                </div>
+            </div>
+
+            <!-- Payment Amount Field from Old Form -->
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="amount">Amount you wish to pay:</label>
+                <div class="govuk-form-controls">
+                    <input class="govuk-input govuk-input--width-10 govuk-input--extra-letter-spacing" id="amount" th:field="*{amount}" placeholder="Amount" type="text">
+                </div>
+            </div>
+
+
         <div class="govuk-form-group">
             <label class="govuk-label" for="name-on-the-account">
                 Name on the account
             </label>
             <input class="govuk-input" id="name-on-the-account" name="nameOnTheAccount" type="text" spellcheck="false" autocomplete="name">
         </div>
+
+
         <div class="govuk-form-group">
             <label class="govuk-label" for="sort-code">
                 Sort code
@@ -88,6 +111,8 @@
             </div>
             <input class="govuk-input govuk-input--width-5 govuk-input--extra-letter-spacing" id="sort-code" name="sortCode" type="text" spellcheck="false" aria-describedby="sort-code-hint" inputmode="numeric">
         </div>
+
+
         <div class="govuk-form-group">
             <label class="govuk-label" for="account-number">
                 Account number
@@ -97,6 +122,9 @@
             </div>
             <input class="govuk-input govuk-input--width-10 govuk-input--extra-letter-spacing" id="account-number" name="accountNumber" type="text" spellcheck="false" aria-describedby="account-number-hint" inputmode="numeric">
         </div>
+
+
+
         <div class="govuk-form-group">
             <label class="govuk-label" for="roll-number">
                 Building society roll number (if you have one)
@@ -104,17 +132,30 @@
             <div id="roll-number-hint" class="govuk-hint">
                 You can find it on your card, statement or passbook
             </div>
-            <form action="confirmation" method="Post">
+
+
+            <input class="govuk-input govuk-input--width-10 govuk-input--extra-letter-spacing" id="roll-number" name="rollNumber" type="text" spellcheck="false" aria-describedby="roll-number-hint">
+        </div>
+            <div id="payment-amount" class="govuk-hint">
+                <label class="govuk-label" for="roll-number">
+                Amount you wish to pay
+
+                </label>
+            </div>
+
+
+      <!--      <form action="confirmation" method="Post">
                 <input class="govuk-input govuk-input--width-10 govuk-input--extra-letter-spacing"
                        id="roll-number"
                        name="rollNumber"
                        type="text"
                        spellcheck="false"
                        aria-describedby="roll-number-hint">
-
+-->
                 <button type="submit" class="govuk-button" data-module="govuk-button">
                     Pay
                 </button>
+
 
             </form>
         </div>

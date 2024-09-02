@@ -1,7 +1,13 @@
 package com.example.cruddemo.entity;
 
+
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 
 @Entity
 @Table(name="fine")
@@ -10,26 +16,31 @@ public class Fine {
     // Define fields
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+    @Column(name = "id")
     private int id;
 
-    @Column(name="first_name")
+    @Column(name = "first_name")
+
     private String firstName;
 
-    @Column(name="last_name")
+    @Column(name = "last_name")
+
     private String lastName;
 
-    @Column(name="email")
+    @Column(name = "email")
+
     private String email;
 
     @Pattern(regexp = "^[A-Z]{1,2}[0-9R][0-9A-Z]? [0-9][ABD-HJLNP-UW-Z]{2}$", message = "not a valid UK post code")
-    @Column(name="post_code")
+
+    @Column(name = "post_code")
     private String postCode;
 
     @Column(name = "reference", unique = true)
-    private String reference;    
-    
-    @Column(name="amount")
+
+    private String reference;
+
+    @Column(name = "amount")
     private double amount;
     
     // Define constructors
